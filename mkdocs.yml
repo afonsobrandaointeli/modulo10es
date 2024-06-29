@@ -1,0 +1,17 @@
+site_name: Módulo 10 ES
+
+theme:
+  name: cinder
+
+nav:
+  - Home: index.md
+
+plugins:
+  - search
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - tables
+  - admonition
+  - codehilite

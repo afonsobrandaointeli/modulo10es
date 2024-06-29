@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+
+    
+    <title>Cicd - Módulo 10 ES</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../css/base.min.css" rel="stylesheet">
+    <link href="../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="..">Módulo 10 ES</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#roadmap-das-aulas">Roadmap das Aulas</a></li>
+        <li class="first-level "><a href="#esteira-de-ci-como-guardia-da-qualidade">Esteira de CI como guardiã da qualidade</a></li>
+        <li class="first-level "><a href="#esquenta-kahoot">Esquenta Kahoot!</a></li>
+        <li class="first-level "><a href="#o-que-e-cicd">O que é CI/CD?</a></li>
+            <li class="second-level"><a href="#integracao-continua-ci">Integração Contínua (CI)</a></li>
+                
+            <li class="second-level"><a href="#entregaimplantacao-continua-cd">Entrega/Implantação Contínua (CD)</a></li>
+                
+        <li class="first-level "><a href="#garantia-da-qualidade-de-software">Garantia da Qualidade de Software</a></li>
+            <li class="second-level"><a href="#boas-praticas-de-sqa">Boas Práticas de SQA</a></li>
+                
+        <li class="first-level "><a href="#act-simulando-github-actions-localmente">Act: Simulando GitHub Actions Localmente</a></li>
+            <li class="second-level"><a href="#dica">Dica</a></li>
+                
+            <li class="second-level"><a href="#instalacao-no-windows">Instalação no Windows</a></li>
+                
+        <li class="first-level "><a href="#multi-stage-builds-eficiencia-e-seguranca">Multi-Stage Builds: Eficiência e Segurança</a></li>
+            <li class="second-level"><a href="#dockerfile-original">Dockerfile Original</a></li>
+                
+            <li class="second-level"><a href="#dockerfile-multi-stage-otimizado">Dockerfile Multi-Stage Otimizado</a></li>
+                
+        <li class="first-level "><a href="#desafio">Desafio!</a></li>
+        <li class="first-level "><a href="#dicas-para-limpar-seu-docker">Dicas para Limpar seu Docker</a></li>
+            <li class="second-level"><a href="#comandos-de-limpeza">Comandos de Limpeza</a></li>
+                
+        <li class="first-level "><a href="#sua-opiniao-e-importante">Sua Opinião é Importante!</a></li>
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h2 id="roadmap-das-aulas">Roadmap das Aulas<a class="headerlink" href="#roadmap-das-aulas" title="Permanent link">&para;</a></h2>
+<p>Confira o cronograma das aulas e os tópicos que serão abordados:</p>
+<p><img alt="Roadmap das Aulas" src="https://res.cloudinary.com/dyhjjms8y/image/upload/v1717115396/Captura_de_tela_2024-05-31_002953_evnk75.png" /></p>
+<hr />
+<h2 id="esteira-de-ci-como-guardia-da-qualidade">Esteira de CI como guardiã da qualidade<a class="headerlink" href="#esteira-de-ci-como-guardia-da-qualidade" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Curso</th>
+<th>Semana</th>
+<th>Pontuação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://learn.microsoft.com/pt-br/devops/deliver/delivering-quality-services-with-devops">Introdução ao fornecimento de serviços de qualidade com DevOps</a></td>
+<td>Semana 08</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://learn.microsoft.com/pt-br/devops/deliver/how-microsoft-delivers-devops">Caso de uso: Como a Microsoft fornece software com o DevOps</a></td>
+<td>Semana 08</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://www.youtube.com/watch?v=_XIIG4Ga3L8">SRE e Disponibilidade: Experiências e desafios do DevOps no Mercado Livre</a></td>
+<td>Semana 08</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://www.youtube.com/watch?v=jhSoFPONQ5s">Plataforma Fury no Mercado Livre</a></td>
+<td>Semana 08</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://integrada.minhabiblioteca.com.br/reader/books/9788580555349/cfi/475!/4/2@100:0.00">Garantia da qualidade de software</a></td>
+<td>Semana 08</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="esquenta-kahoot">Esquenta Kahoot!<a class="headerlink" href="#esquenta-kahoot" title="Permanent link">&para;</a></h2>
+<p>Prepare-se para o quiz! Teste seus conhecimentos sobre DevOps e os temas abordados nos autoestudos. Clique no botão abaixo para acessar o Kahoot! e entrar no jogo.</p>
+<p><a href="https://kahoot.it/" target="_blank" class="btn btn-lg btn-warning">
+  <i class="fas fa-play me-2"></i> Jogar Kahoot!
+</a></p>
+<hr />
+<h2 id="o-que-e-cicd">O que é CI/CD?<a class="headerlink" href="#o-que-e-cicd" title="Permanent link">&para;</a></h2>
+<p>CI/CD, ou Integração Contínua e Entrega/Implantação Contínua, é um conjunto de práticas que automatizam o processo de desenvolvimento, teste e implantação de software. O objetivo é entregar software de forma mais rápida, frequente e confiável.</p>
+<h4 id="integracao-continua-ci">Integração Contínua (CI)<a class="headerlink" href="#integracao-continua-ci" title="Permanent link">&para;</a></h4>
+<p>A CI envolve a integração frequente do código de todos os desenvolvedores em um repositório central. Cada integração passa por testes automatizados para garantir que o código não introduza novos erros.</p>
+<ul>
+<li>Integração frequente de código</li>
+<li>Testes automatizados</li>
+<li>Feedback rápido sobre erros</li>
+</ul>
+<h4 id="entregaimplantacao-continua-cd">Entrega/Implantação Contínua (CD)<a class="headerlink" href="#entregaimplantacao-continua-cd" title="Permanent link">&para;</a></h4>
+<p>A CD automatiza o processo de implantação do software em diferentes ambientes, como desenvolvimento, teste e produção. O objetivo é garantir que o software esteja sempre pronto para ser implantado em produção.</p>
+<ul>
+<li>Implantação automatizada</li>
+<li>Ambientes de teste realistas</li>
+<li>Entrega rápida de novas funcionalidades</li>
+</ul>
+<p>O CI/CD é essencial para equipes que desejam entregar software de alta qualidade de forma rápida e eficiente. Ele ajuda a reduzir o tempo de lançamento, aumentar a frequência de entregas e melhorar a qualidade do software.</p>
+<p><img alt="Diagrama CI/CD" src="https://res.cloudinary.com/dyhjjms8y/image/upload/v1717111988/Captura_de_tela_2024-05-30_233310_enkayb.png" /></p>
+<hr />
+<h2 id="garantia-da-qualidade-de-software">Garantia da Qualidade de Software<a class="headerlink" href="#garantia-da-qualidade-de-software" title="Permanent link">&para;</a></h2>
+<p>A garantia da qualidade de software (SQA) é um conjunto de atividades sistemáticas que visam garantir que o software atenda aos requisitos e expectativas dos usuários. Isso envolve a aplicação de boas práticas em todas as etapas do desenvolvimento, desde o planejamento até a implantação e manutenção.</p>
+<h4 id="boas-praticas-de-sqa">Boas Práticas de SQA<a class="headerlink" href="#boas-praticas-de-sqa" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Testes automatizados:</strong> Testes unitários, de integração e de sistema automatizados para garantir a funcionalidade e o desempenho do software.</li>
+<li><strong>Análise estática de código:</strong> Ferramentas como linters e analisadores estáticos para identificar problemas de código, como erros de sintaxe, vulnerabilidades de segurança e problemas de estilo.</li>
+<li><strong>Revisão de código:</strong> Revisão manual do código por outros desenvolvedores para identificar problemas e garantir a qualidade do código.</li>
+<li><strong>Monitoramento contínuo:</strong> Monitoramento do software em produção para identificar problemas de desempenho, erros e falhas de segurança.</li>
+<li><strong>Integração contínua e entrega contínua (CI/CD):</strong> Automação do processo de build, teste e implantação para garantir que o software seja entregue de forma rápida e confiável.</li>
+</ul>
+<hr />
+<h2 id="act-simulando-github-actions-localmente">Act: Simulando GitHub Actions Localmente<a class="headerlink" href="#act-simulando-github-actions-localmente" title="Permanent link">&para;</a></h2>
+<p>O Act é uma ferramenta poderosa que permite simular localmente os fluxos de trabalho do GitHub Actions. Isso agiliza o desenvolvimento e a depuração de seus pipelines de CI/CD, permitindo que você teste suas ações antes de enviá-las para o GitHub.</p>
+<p><a href="https://github.com/nektos/act" target="_blank" class="btn btn-primary btn-lg">
+  <i class="fab fa-github me-2"></i> Repositório do Act no GitHub
+</a></p>
+<h4 id="dica">Dica<a class="headerlink" href="#dica" title="Permanent link">&para;</a></h4>
+<p>Quer aprender mais sobre como usar o Act? Confira este artigo: <a href="https://medium.com/it-dead-inside/test-your-github-actions-locally-with-act-c3790834fc3a">Test your GitHub Actions locally with Act</a></p>
+<h4 id="instalacao-no-windows">Instalação no Windows<a class="headerlink" href="#instalacao-no-windows" title="Permanent link">&para;</a></h4>
+<p>Para instalar o Act no Windows, você pode seguir os seguintes passos:</p>
+<ol>
+<li><strong>Instale o Chocolatey:</strong> O Chocolatey é um gerenciador de pacotes para Windows que facilita a instalação de softwares. Você pode instalá-lo seguindo as instruções no site oficial: <a href="https://chocolatey.org/install">https://chocolatey.org/install</a></li>
+<li><strong>Instale o Act:</strong> Após instalar o Chocolatey, abra um terminal com privilégios de administrador e execute o seguinte comando:
+   <code>sh
+   choco install act-cli</code></li>
+<li><strong>Verifique a instalação:</strong> Após a instalação, você pode verificar se o Act está funcionando corretamente executando o comando:
+   <code>sh
+   act --version</code></li>
+</ol>
+<hr />
+<h2 id="multi-stage-builds-eficiencia-e-seguranca">Multi-Stage Builds: Eficiência e Segurança<a class="headerlink" href="#multi-stage-builds-eficiencia-e-seguranca" title="Permanent link">&para;</a></h2>
+<p>Multi-stage builds são uma poderosa técnica do Docker que permite criar imagens menores e mais seguras, otimizando o processo de construção e reduzindo a superfície de ataque.</p>
+<h4 id="dockerfile-original">Dockerfile Original<a class="headerlink" href="#dockerfile-original" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span><code><span class="c"># Dockerfile</span>
+<span class="k">FROM</span><span class="w"> </span><span class="s">golang:alpine</span>
+
+<span class="k">WORKDIR</span><span class="w"> </span><span class="s">/app</span>
+
+<span class="k">COPY</span><span class="w"> </span>main.go<span class="w"> </span>main_test.go<span class="w"> </span>./
+
+<span class="k">RUN</span><span class="w"> </span>go<span class="w"> </span>mod<span class="w"> </span>init<span class="w"> </span>myapp
+<span class="k">RUN</span><span class="w"> </span>go<span class="w"> </span>mod<span class="w"> </span>tidy
+<span class="k">RUN</span><span class="w"> </span>go<span class="w"> </span>build<span class="w"> </span>-o<span class="w"> </span>main<span class="w"> </span>main.go
+
+<span class="k">EXPOSE</span><span class="w"> </span><span class="s">8080</span>
+
+<span class="k">CMD</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;go&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;run&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;main.go&quot;</span><span class="p">]</span>
+</code></pre></div>
+
+<h4 id="dockerfile-multi-stage-otimizado">Dockerfile Multi-Stage Otimizado<a class="headerlink" href="#dockerfile-multi-stage-otimizado" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span><code><span class="c"># Estágio de construção</span>
+<span class="k">FROM</span><span class="w"> </span><span class="s">golang:1.22</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="s">builder</span>
+
+<span class="k">WORKDIR</span><span class="w"> </span><span class="s">/app</span>
+<span class="k">COPY</span><span class="w"> </span>.<span class="w"> </span>.
+
+<span class="k">RUN</span><span class="w"> </span>go<span class="w"> </span>mod<span class="w"> </span>download
+<span class="k">RUN</span><span class="w"> </span><span class="nv">CGO_ENABLED</span><span class="o">=</span><span class="m">0</span><span class="w"> </span><span class="nv">GOOS</span><span class="o">=</span>linux<span class="w"> </span>go<span class="w"> </span>build<span class="w"> </span>-o<span class="w"> </span>main<span class="w"> </span>.
+
+<span class="c"># Estágio de produção</span>
+<span class="k">FROM</span><span class="w"> </span><span class="s">alpine:latest</span>
+<span class="k">WORKDIR</span><span class="w"> </span><span class="s">/app</span>
+<span class="k">COPY</span><span class="w"> </span>--from<span class="o">=</span>builder<span class="w"> </span>/app/main<span class="w"> </span>.
+
+<span class="k">EXPOSE</span><span class="w"> </span><span class="s">8080</span>
+<span class="k">CMD</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;./main&quot;</span><span class="p">]</span>
+</code></pre></div>
+
+<hr />
+<h2 id="desafio">Desafio!<a class="headerlink" href="#desafio" title="Permanent link">&para;</a></h2>
+<p>Em sala de aula, vamos abrir e revisar juntos o pipeline de CI/CD criado neste projeto. Seu desafio será:</p>
+<ol>
+<li>Clonar o repositório.</li>
+<li>Criar uma conta no Render.com.</li>
+<li>Fazer o deploy da aplicação, personalizando-a para exibir seu nome em vez de "Hello World".</li>
+<li><strong>Otimizar o Dockerfile utilizando a técnica de multi-stage build.</strong></li>
+</ol>
+<p><a href="https://github.com/afonsobrandaointeli/cicd"><img alt="Repositório do Projeto no GitHub" src="https://github.com/afonsobrandaointeli/cicd" /></a></p>
+<hr />
+<h2 id="dicas-para-limpar-seu-docker">Dicas para Limpar seu Docker<a class="headerlink" href="#dicas-para-limpar-seu-docker" title="Permanent link">&para;</a></h2>
+<p>Mantenha seu ambiente Docker organizado e livre de recursos não utilizados com estes comandos úteis:</p>
+<h4 id="comandos-de-limpeza">Comandos de Limpeza<a class="headerlink" href="#comandos-de-limpeza" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span><code>docker<span class="w"> </span>stop<span class="w"> </span><span class="k">$(</span>docker<span class="w"> </span>ps<span class="w"> </span>-aq<span class="k">)</span>
+docker<span class="w"> </span>rm<span class="w"> </span><span class="k">$(</span>docker<span class="w"> </span>ps<span class="w"> </span>-aq<span class="k">)</span>
+docker<span class="w"> </span>rmi<span class="w"> </span><span class="k">$(</span>docker<span class="w"> </span>images<span class="w"> </span>-aq<span class="k">)</span>
+docker<span class="w"> </span>image<span class="w"> </span>prune<span class="w"> </span>-af
+docker<span class="w"> </span>volume<span class="w"> </span>prune<span class="w"> </span>-f
+docker<span class="w"> </span>network<span class="w"> </span>prune<span class="w"> </span>-f
+docker<span class="w"> </span>system<span class="w"> </span>prune<span class="w"> </span>-af<span class="w"> </span>--volumes
+</code></pre></div>
+
+<p><strong>Atenção:</strong> O comando <code>docker system prune -af --volumes</code> remove todos os containers parados, imagens não utilizadas, redes não referenciadas e volumes pendentes. Use com cuidado!</p>
+<hr />
+<h2 id="sua-opiniao-e-importante">Sua Opinião é Importante!<a class="headerlink" href="#sua-opiniao-e-importante" title="Permanent link">&para;</a></h2>
+<p>Deixe seu feedback com estrelas e comentários e ajude-nos a melhorar o Inteli e o curso de ES.</p></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = ".."</script>
+    
+    <script src="../js/base.js"></script>
+    <script src="../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>

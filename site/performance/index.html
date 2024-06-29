@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+
+    
+    <title>Roadmap das Aulas - Módulo 10 ES</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../css/base.min.css" rel="stylesheet">
+    <link href="../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="..">Módulo 10 ES</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#roadmap-das-aulas">Roadmap das Aulas</a></li>
+            <li class="second-level"><a href="#aspectos-avancados-de-programacao-vamos-falar-sobre-performance-de-codigo">Aspectos avançados de programação: Vamos falar sobre performance de código?</a></li>
+                
+                <li class="third-level"><a href="#performance-de-codigo-a-busca-pelo-limite">Performance de Código: A Busca pelo Limite</a></li>
+                <li class="third-level"><a href="#indo-alem-da-performance">Indo Além da Performance</a></li>
+            <li class="second-level"><a href="#telemetria-vs-logs-de-negocio-entendendo-a-diferenca">Telemetria vs. Logs de Negócio: Entendendo a Diferença</a></li>
+                
+                <li class="third-level"><a href="#telemetria">Telemetria</a></li>
+                <li class="third-level"><a href="#logs-de-negocio">Logs de Negócio</a></li>
+            <li class="second-level"><a href="#influxdb-a-base-para-suas-metricas">InfluxDB: A Base para suas Métricas</a></li>
+                
+                <li class="third-level"><a href="#por-que-escolher-o-influxdb">Por que escolher o InfluxDB?</a></li>
+                <li class="third-level"><a href="#comparativo-com-mongodb-e-prometheus">Comparativo com MongoDB e Prometheus</a></li>
+            <li class="second-level"><a href="#opentelemetry-dynatrace-e-prometheus-observabilidade-aprimorada">OpenTelemetry, Dynatrace e Prometheus: Observabilidade Aprimorada</a></li>
+                
+                <li class="third-level"><a href="#opentelemetry">OpenTelemetry</a></li>
+                <li class="third-level"><a href="#dynatrace">Dynatrace</a></li>
+                <li class="third-level"><a href="#prometheus">Prometheus</a></li>
+            <li class="second-level"><a href="#influxdb-e-prometheus-com-docker-rapido-e-facil">InfluxDB e Prometheus com Docker: Rápido e Fácil</a></li>
+                
+                <li class="third-level"><a href="#comando-docker">Comando Docker</a></li>
+                <li class="third-level"><a href="#codigo-python-apppy">Código Python (app.py)</a></li>
+                <li class="third-level"><a href="#env">.env</a></li>
+                <li class="third-level"><a href="#prometheusyml">prometheus.yml</a></li>
+                <li class="third-level"><a href="#requirementstxt">requirements.txt</a></li>
+            <li class="second-level"><a href="#aplicando-a-aprendizagem-baseada-em-times-tbl-com-autoestudo-ponderado">Aplicando a Aprendizagem Baseada em Times (TBL) com Autoestudo Ponderado</a></li>
+                
+                <li class="third-level"><a href="#desafio-tbl">Desafio TBL:</a></li>
+                <li class="third-level"><a href="#instrucoes-completas-do-desafio-tbl">Instruções Completas do Desafio TBL</a></li>
+            <li class="second-level"><a href="#autoestudo-ponderado">Autoestudo Ponderado</a></li>
+                
+            <li class="second-level"><a href="#sua-opiniao-e-importante">Sua Opinião é Importante!</a></li>
+                
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="roadmap-das-aulas">Roadmap das Aulas<a class="headerlink" href="#roadmap-das-aulas" title="Permanent link">&para;</a></h1>
+<p>Confira o cronograma das aulas e os tópicos que serão abordados:</p>
+<p><img alt="Roadmap das Aulas" src="https://res.cloudinary.com/dyhjjms8y/image/upload/v1717115396/Captura_de_tela_2024-05-31_002953_evnk75.png" /></p>
+<h2 id="aspectos-avancados-de-programacao-vamos-falar-sobre-performance-de-codigo">Aspectos avançados de programação: Vamos falar sobre performance de código?<a class="headerlink" href="#aspectos-avancados-de-programacao-vamos-falar-sobre-performance-de-codigo" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Curso</th>
+<th>Semana</th>
+<th>Pontuação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://philos.sophia.com.br/terminal/9418/acervo/detalhe/16553?guid=1701182055297%20e%20returnUrl=%2fterminal%2f9418%2fresultado%2flistar%3fguid%3d1701182055297%26quantidadePaginas%3d1%26codigoRegistro%3d16553%2316553%20e%20i=1">Padrões de software</a></td>
+<td>Semana 08</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://www.youtube.com/watch?v=Tuok3H5Girw">Manipulação de bits: uma técnica essencial para programação de alta performance</a></td>
+<td>Semana 08</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://learn.microsoft.com/en-us/dotnet/standard/garbage-collection/fundamentals">Fundamentals of garbage collection</a></td>
+<td>Semana 08</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://www.gta.ufrj.br/~cruz/courses/eel770/slides/9_memoria.pdf">Mapa de memória de um processo</a></td>
+<td>Semana 08</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://learn.microsoft.com/pt-br/aspnet/core/log-mon/metrics/metrics?view=aspnetcore-8.0">Coletando métricas</a></td>
+<td>Semana 08</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<h3 id="performance-de-codigo-a-busca-pelo-limite">Performance de Código: A Busca pelo Limite<a class="headerlink" href="#performance-de-codigo-a-busca-pelo-limite" title="Permanent link">&para;</a></h3>
+<p>Atingir o máximo de performance em código exige um mergulho profundo nos mecanismos internos da linguagem de programação. Pequenas otimizações podem fazer uma grande diferença, especialmente em operações repetidas milhões de vezes.</p>
+<h4 id="exemplo-par-ou-impar">Exemplo: Par ou Ímpar?<a class="headerlink" href="#exemplo-par-ou-impar" title="Permanent link">&para;</a></h4>
+<p>Uma maneira comum de verificar se um número é par ou ímpar é usar o operador módulo (%). No entanto, existe uma alternativa mais rápida: o operador bit a bit AND (&amp;) combinado com o número 1.</p>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">eh_par_modulo</span><span class="p">(</span><span class="n">numero</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">numero</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span>
+
+<span class="k">def</span> <span class="nf">eh_par_bitwise</span><span class="p">(</span><span class="n">numero</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">numero</span> <span class="o">&amp;</span> <span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
+</code></pre></div>
+
+<p>Em Python, a segunda função (<code>eh_par_bitwise</code>) tende a ser mais rápida. Isso porque o operador <code>&amp; 1</code> realiza uma operação bit a bit, verificando apenas o último bit do número em sua representação binária. Se o último bit for 0, o número é par; se for 1, é ímpar. Essa operação é mais simples e direta do que o cálculo do módulo.</p>
+<h3 id="indo-alem-da-performance">Indo Além da Performance<a class="headerlink" href="#indo-alem-da-performance" title="Permanent link">&para;</a></h3>
+<p>Embora a otimização seja importante, é crucial equilibrar performance com legibilidade e manutenibilidade do código. Em muitos casos, a diferença de velocidade entre duas abordagens pode ser insignificante. Priorize a clareza do código, a menos que o desempenho seja um fator crítico na sua aplicação.</p>
+<p>Lembre-se: o conhecimento profundo da linguagem é a chave para desbloquear todo o potencial de performance do seu código!</p>
+<h2 id="telemetria-vs-logs-de-negocio-entendendo-a-diferenca">Telemetria vs. Logs de Negócio: Entendendo a Diferença<a class="headerlink" href="#telemetria-vs-logs-de-negocio-entendendo-a-diferenca" title="Permanent link">&para;</a></h2>
+<p>Compreender a distinção entre telemetria e logs de negócio é importante para construir um sistema de monitoramento eficiente e obter insights valiosos sobre o desempenho e o comportamento do seu software.</p>
+<h3 id="telemetria">Telemetria<a class="headerlink" href="#telemetria" title="Permanent link">&para;</a></h3>
+<p>A telemetria é a coleta automatizada de dados sobre o desempenho, o uso e a saúde do seu software em tempo real. Ela fornece informações sobre métricas como tempo de resposta, utilização de recursos, taxas de erro e comportamento do usuário.</p>
+<ul>
+<li>Dados quantitativos</li>
+<li>Foco em métricas e indicadores</li>
+<li>Usada para monitoramento e análise de tendências</li>
+</ul>
+<h3 id="logs-de-negocio">Logs de Negócio<a class="headerlink" href="#logs-de-negocio" title="Permanent link">&para;</a></h3>
+<p>Os logs de negócio registram eventos específicos relacionados às atividades do seu software, como transações, logins de usuários, alterações de dados e erros. Eles fornecem um registro detalhado do que aconteceu em um determinado momento.</p>
+<ul>
+<li>Dados qualitativos</li>
+<li>Foco em eventos e ações</li>
+<li>Usados para auditoria, depuração e análise de causa raiz</li>
+</ul>
+<h2 id="influxdb-a-base-para-suas-metricas">InfluxDB: A Base para suas Métricas<a class="headerlink" href="#influxdb-a-base-para-suas-metricas" title="Permanent link">&para;</a></h2>
+<p>O InfluxDB é um banco de dados especializado em séries temporais, ideal para armazenar e analisar dados que mudam ao longo do tempo, como métricas, eventos e logs.</p>
+<h3 id="por-que-escolher-o-influxdb">Por que escolher o InfluxDB?<a class="headerlink" href="#por-que-escolher-o-influxdb" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Otimizado para séries temporais: Alta performance na escrita e consulta de dados com timestamps.</li>
+<li>Modelo de dados flexível: Permite armazenar dados com tags e campos personalizados.</li>
+<li>Linguagem de consulta poderosa: Flux, uma linguagem de consulta SQL-like para manipular e agregar dados de séries temporais.</li>
+<li>Integração com outras ferramentas: Compatível com Prometheus, Grafana e outras ferramentas do ecossistema de monitoramento.</li>
+</ul>
+<h3 id="comparativo-com-mongodb-e-prometheus">Comparativo com MongoDB e Prometheus<a class="headerlink" href="#comparativo-com-mongodb-e-prometheus" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Característica</th>
+<th>InfluxDB</th>
+<th>MongoDB</th>
+<th>Prometheus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tipo de dados</td>
+<td>Séries temporais</td>
+<td>Documentos (JSON)</td>
+<td>Métricas</td>
+</tr>
+<tr>
+<td>Modelo de dados</td>
+<td>Flexível (tags e campos)</td>
+<td>Flexível (sem esquema)</td>
+<td>Métricas com rótulos</td>
+</tr>
+<tr>
+<td>Linguagem de consulta</td>
+<td>Flux (SQL-like)</td>
+<td>MongoDB Query Language (MQL)</td>
+<td>PromQL</td>
+</tr>
+<tr>
+<td>Armazenamento</td>
+<td>Otimizado para séries temporais</td>
+<td>Armazenamento geral</td>
+<td>Armazenamento em memória</td>
+</tr>
+<tr>
+<td>Uso principal</td>
+<td>Monitoramento, análise de séries temporais</td>
+<td>Armazenamento de dados de aplicativos, bancos de dados de propósito geral</td>
+<td>Monitoramento, alertas</td>
+</tr>
+</tbody>
+</table>
+<h2 id="opentelemetry-dynatrace-e-prometheus-observabilidade-aprimorada">OpenTelemetry, Dynatrace e Prometheus: Observabilidade Aprimorada<a class="headerlink" href="#opentelemetry-dynatrace-e-prometheus-observabilidade-aprimorada" title="Permanent link">&para;</a></h2>
+<p>Explore as ferramentas que elevam a observabilidade do seu sistema, permitindo monitorar, rastrear e analisar o desempenho de suas aplicações de forma abrangente.</p>
+<h3 id="opentelemetry">OpenTelemetry<a class="headerlink" href="#opentelemetry" title="Permanent link">&para;</a></h3>
+<p>OpenTelemetry é um conjunto de APIs, SDKs, ferramentas e integrações que permite instrumentar, gerar, coletar e exportar dados de telemetria (traces, métricas e logs) para análise.</p>
+<ul>
+<li>Padrão aberto e independente de fornecedor</li>
+<li>Coleta de dados de telemetria completa</li>
+<li>Integração com diversas ferramentas de observabilidade</li>
+</ul>
+<h3 id="dynatrace">Dynatrace<a class="headerlink" href="#dynatrace" title="Permanent link">&para;</a></h3>
+<p>Dynatrace é uma plataforma de observabilidade completa que oferece monitoramento de aplicações, infraestrutura, experiência do usuário e análise de negócios.</p>
+<ul>
+<li>Monitoramento full-stack</li>
+<li>Detecção automática de problemas</li>
+<li>Análise de causa raiz com inteligência artificial</li>
+</ul>
+<h3 id="prometheus">Prometheus<a class="headerlink" href="#prometheus" title="Permanent link">&para;</a></h3>
+<p>Prometheus é um sistema de monitoramento e alerta de código aberto, projetado para coletar métricas de séries temporais.</p>
+<ul>
+<li>Coleta de métricas em tempo real</li>
+<li>Linguagem de consulta poderosa (PromQL)</li>
+<li>Alertas flexíveis</li>
+</ul>
+<h2 id="influxdb-e-prometheus-com-docker-rapido-e-facil">InfluxDB e Prometheus com Docker: Rápido e Fácil<a class="headerlink" href="#influxdb-e-prometheus-com-docker-rapido-e-facil" title="Permanent link">&para;</a></h2>
+<p>Inicie rapidamente uma instância do InfluxDB e Prometheus usando o Docker e explore o exemplo de código em Python para enviar métricas:</p>
+<h3 id="comando-docker">Comando Docker<a class="headerlink" href="#comando-docker" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span>-p<span class="w"> </span><span class="m">8086</span>:8086<span class="w"> </span>--name<span class="w"> </span>my-influxdb<span class="w"> </span>influxdb:latest
+docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span>-p<span class="w"> </span><span class="m">9090</span>:9090<span class="w"> </span>--name<span class="w"> </span>prometheus<span class="w"> </span>-v<span class="w"> </span>C:/Users/Intelii/source/repos/aulatal/prometheus.yml:/etc/prometheus/prometheus.yml<span class="w"> </span>prom/prometheus
+</code></pre></div>
+
+<h3 id="codigo-python-apppy">Código Python (app.py)<a class="headerlink" href="#codigo-python-apppy" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span>
+<span class="kn">from</span> <span class="nn">prometheus_client</span> <span class="kn">import</span> <span class="n">Gauge</span><span class="p">,</span> <span class="n">start_http_server</span>
+<span class="kn">from</span> <span class="nn">influxdb_client</span> <span class="kn">import</span> <span class="n">InfluxDBClient</span><span class="p">,</span> <span class="n">Point</span><span class="p">,</span> <span class="n">WritePrecision</span>
+<span class="kn">from</span> <span class="nn">influxdb_client.client.write_api</span> <span class="kn">import</span> <span class="n">SYNCHRONOUS</span>
+<span class="kn">import</span> <span class="nn">random</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">from</span> <span class="nn">dotenv</span> <span class="kn">import</span> <span class="n">load_dotenv</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">threading</span> <span class="kn">import</span> <span class="n">Thread</span>
+
+<span class="c1"># Carrega as variáveis de ambiente do arquivo .env</span>
+<span class="n">load_dotenv</span><span class="p">()</span>
+
+<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+
+<span class="c1"># Conexão com o InfluxDB (lendo do .env)</span>
+<span class="n">influx_url</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;INFLUXDB_URL&#39;</span><span class="p">)</span>
+<span class="n">influx_token</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;INFLUXDB_TOKEN&#39;</span><span class="p">)</span>
+<span class="n">influx_org</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;INFLUXDB_ORG&#39;</span><span class="p">)</span>
+<span class="n">influx_bucket</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;INFLUXDB_BUCKET&#39;</span><span class="p">)</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">client</span> <span class="o">=</span> <span class="n">InfluxDBClient</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="n">influx_url</span><span class="p">,</span> <span class="n">token</span><span class="o">=</span><span class="n">influx_token</span><span class="p">,</span> <span class="n">org</span><span class="o">=</span><span class="n">influx_org</span><span class="p">)</span>
+    <span class="n">write_api</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">write_api</span><span class="p">(</span><span class="n">write_options</span><span class="o">=</span><span class="n">SYNCHRONOUS</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Erro ao conectar ao InfluxDB: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># Encerra o aplicativo se não conseguir conectar ao InfluxDB</span>
+
+<span class="c1"># Métricas</span>
+<span class="n">temperature</span> <span class="o">=</span> <span class="n">Gauge</span><span class="p">(</span><span class="s1">&#39;temperature_celsius&#39;</span><span class="p">,</span> <span class="s1">&#39;Temperature in Celsius&#39;</span><span class="p">)</span>
+<span class="n">humidity</span> <span class="o">=</span> <span class="n">Gauge</span><span class="p">(</span><span class="s1">&#39;humidity_percent&#39;</span><span class="p">,</span> <span class="s1">&#39;Humidity in Percentage&#39;</span><span class="p">)</span>
+<span class="n">pressure</span> <span class="o">=</span> <span class="n">Gauge</span><span class="p">(</span><span class="s1">&#39;pressure_hpa&#39;</span><span class="p">,</span> <span class="s1">&#39;Pressure in hPa&#39;</span><span class="p">)</span>
+
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
+    <span class="k">return</span> <span class="s2">&quot;Hello, World!&quot;</span>
+
+<span class="k">def</span> <span class="nf">generate_metrics</span><span class="p">():</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">temp_value</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">35</span><span class="p">)</span>
+        <span class="n">humidity_value</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">40</span><span class="p">,</span> <span class="mi">80</span><span class="p">)</span>
+        <span class="n">pressure_value</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">980</span><span class="p">,</span> <span class="mi">1030</span><span class="p">)</span>
+
+        <span class="n">temperature</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">temp_value</span><span class="p">)</span>
+        <span class="n">humidity</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">humidity_value</span><span class="p">)</span>
+        <span class="n">pressure</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">pressure_value</span><span class="p">)</span>
+
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Metrics updated - Temperature: </span><span class="si">{</span><span class="n">temp_value</span><span class="si">}</span><span class="s2">°C, Humidity: </span><span class="si">{</span><span class="n">humidity_value</span><span class="si">}</span><span class="s2">%, Pressure: </span><span class="si">{</span><span class="n">pressure_value</span><span class="si">}</span><span class="s2">hPa&quot;</span><span class="p">)</span>
+
+        <span class="n">point</span> <span class="o">=</span> <span class="n">Point</span><span class="p">(</span><span class="s2">&quot;metrics&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">tag</span><span class="p">(</span><span class="s2">&quot;host&quot;</span><span class="p">,</span> <span class="s2">&quot;server01&quot;</span><span class="p">)</span><span class="o">.</span>\
+            <span class="n">field</span><span class="p">(</span><span class="s2">&quot;temperature&quot;</span><span class="p">,</span> <span class="n">temp_value</span><span class="p">)</span><span class="o">.</span>\
+            <span class="n">field</span><span class="p">(</span><span class="s2">&quot;humidity&quot;</span><span class="p">,</span> <span class="n">humidity_value</span><span class="p">)</span><span class="o">.</span>\
+            <span class="n">field</span><span class="p">(</span><span class="s2">&quot;pressure&quot;</span><span class="p">,</span> <span class="n">pressure_value</span><span class="p">)</span><span class="o">.</span>\
+            <span class="n">time</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">time_ns</span><span class="p">()),</span> <span class="n">WritePrecision</span><span class="o">.</span><span class="n">NS</span><span class="p">)</span>
+
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">write_api</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">bucket</span><span class="o">=</span><span class="n">influx_bucket</span><span class="p">,</span> <span class="n">org</span><span class="o">=</span><span class="n">influx_org</span><span class="p">,</span> <span class="n">record</span><span class="o">=</span><span class="n">point</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Metrics sent to InfluxDB - Temperature: </span><span class="si">{</span><span class="n">temp_value</span><span class="si">}</span><span class="s2">°C, Humidity: </span><span class="si">{</span><span class="n">humidity_value</span><span class="si">}</span><span class="s2">%, Pressure: </span><span class="si">{</span><span class="n">pressure_value</span><span class="si">}</span><span class="s2">hPa&quot;</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Erro ao escrever no InfluxDB: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">start_http_server</span><span class="p">(</span><span class="mi">8000</span><span class="p">)</span>  <span class="c1"># Inicia o servidor de métricas Prometheus na porta 8000</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Prometheus metrics server started on port 8000&quot;</span><span class="p">)</span>
+
+    <span class="n">metrics_thread</span> <span class="o">=</span> <span class="n">Thread</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="n">generate_metrics</span><span class="p">)</span>
+    <span class="n">metrics_thread</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s1">&#39;0.0.0.0&#39;</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">5000</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Flask server started on port 5000&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<h3 id="env">.env<a class="headerlink" href="#env" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code>INFLUXDB_URL=http://localhost:8086
+INFLUXDB_TOKEN=
+INFLUXDB_ORG=
+INFLUXDB_BUCKET=
+</code></pre></div>
+
+<h3 id="prometheusyml">prometheus.yml<a class="headerlink" href="#prometheusyml" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="nt">global</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">scrape_interval</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">15s</span><span class="w">  </span><span class="c1"># Intervalo de coleta de métricas</span>
+
+<span class="nt">scrape_configs</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">job_name</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;flask_app&#39;</span>
+<span class="w">    </span><span class="nt">static_configs</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">targets</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&#39;host.docker.internal:8000&#39;</span><span class="p p-Indicator">]</span>
+</code></pre></div>
+
+<h3 id="requirementstxt">requirements.txt<a class="headerlink" href="#requirementstxt" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code>Flask
+prometheus_client
+influxdb-client
+python-dotenv
+</code></pre></div>
+
+<h2 id="aplicando-a-aprendizagem-baseada-em-times-tbl-com-autoestudo-ponderado">Aplicando a Aprendizagem Baseada em Times (TBL) com Autoestudo Ponderado<a class="headerlink" href="#aplicando-a-aprendizagem-baseada-em-times-tbl-com-autoestudo-ponderado" title="Permanent link">&para;</a></h2>
+<p>Agora é hora de colocar em prática o que você aprendeu sobre métricas, logs e observabilidade! Nesta atividade TBL, você trabalhará em equipes mistas para aplicar o autoestudo "Como extrair boas métricas da sua aplicação" em um projeto prático.</p>
+<h3 id="desafio-tbl">Desafio TBL:<a class="headerlink" href="#desafio-tbl" title="Permanent link">&para;</a></h3>
+<p>Seu time deverá aplicar ao seu projeto. Utilizando os conceitos de métricas, logs e as ferramentas apresentadas (InfluxDB, Prometheus, Grafana, OpenTelemetry), vocês deverão:</p>
+<ol>
+<li>Coletar métricas relevantes da aplicação.</li>
+<li>Implementar o Prometheus para coletar e armazenar as métricas.</li>
+<li>Configurar o Grafana para visualizar as métricas em dashboards.</li>
+<li>Documentar todo o processo em um arquivo README.md, incluindo:<ul>
+<li>Passo a passo detalhado da implementação.</li>
+<li>Prints das métricas coletadas e dos dashboards do Grafana.</li>
+<li>Explicações claras e objetivas sobre as decisões tomadas.</li>
+<li>Uso de commits semânticos para facilitar o acompanhamento do desenvolvimento.</li>
+</ul>
+</li>
+</ol>
+<h3 id="instrucoes-completas-do-desafio-tbl">Instruções Completas do Desafio TBL<a class="headerlink" href="#instrucoes-completas-do-desafio-tbl" title="Permanent link">&para;</a></h3>
+<p><strong>Descrição:</strong></p>
+<p>Como extrair boas métricas da sua aplicação</p>
+<p><strong>Conteúdos Relacionados:</strong></p>
+<p>Coletando Métricas</p>
+<p><strong>Pergunta:</strong></p>
+<p>Crie um repositório para armazenar os códigos gerados no autoestudo. Siga o passo a passo, implementando a coleta de métricas, implementação do Prometheus e Grafana.</p>
+<p>Documente o passo a passo em arquivo readme de forma que possa ser reproduzido posteriormente. Utilize prints e texto de forma clara, objetiva e coesa.</p>
+<p>Crie uma seção demonstrando os gráficos em funcionamento.</p>
+<p><strong>Barema:</strong></p>
+<ul>
+<li>Codificação de todas as etapas - 3 pontos</li>
+<li>Código e Testes compilando e executando sem erros - 2 pontos</li>
+<li>Métricas coletadas e evidenciadas no relatório - 2 pontos</li>
+<li>Commit semântico e Organização do relatório - 1 ponto</li>
+<li>Relatório em markdown escrito de forma clara, concisa e objetiva - 2 pontos</li>
+</ul>
+<h2 id="autoestudo-ponderado">Autoestudo Ponderado<a class="headerlink" href="#autoestudo-ponderado" title="Permanent link">&para;</a></h2>
+<p><img alt="Guia de Autoestudo Ponderado" src="https://res.cloudinary.com/dyhjjms8y/image/upload/v1717121132/Captura_de_tela_2024-05-31_020525_uqy7l0.png" /></p>
+<h2 id="sua-opiniao-e-importante">Sua Opinião é Importante!<a class="headerlink" href="#sua-opiniao-e-importante" title="Permanent link">&para;</a></h2>
+<p>Deixe seu feedback com estrelas e comentários e ajude-nos a melhorar o Inteli e o curso de ES.</p></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = ".."</script>
+    
+    <script src="../js/base.js"></script>
+    <script src="../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>
