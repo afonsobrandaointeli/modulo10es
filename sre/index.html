@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+
+    
+    <title>Roadmap das Aulas - Módulo 10 ES</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../css/base.min.css" rel="stylesheet">
+    <link href="../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="..">Módulo 10 ES</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#roadmap-das-aulas">Roadmap das Aulas</a></li>
+            <li class="second-level"><a href="#sre-voce-esta-fazendo-isso-errado">SRE: Você está fazendo isso errado!</a></li>
+                
+                <li class="third-level"><a href="#repositorio-github">Repositório GitHub</a></li>
+            <li class="second-level"><a href="#vamos-ver-se-voces-estao-fazendo-autoestudos">Vamos ver se vocês estão fazendo Autoestudos!</a></li>
+                
+            <li class="second-level"><a href="#sre-site-reliability-engineering">SRE (Site Reliability Engineering)</a></li>
+                
+                <li class="third-level"><a href="#principais-conceitos">Principais Conceitos</a></li>
+                <li class="third-level"><a href="#beneficios">Benefícios</a></li>
+            <li class="second-level"><a href="#tecnologias-essenciais-para-sre">Tecnologias Essenciais para SRE</a></li>
+                
+                <li class="third-level"><a href="#kubernetes">Kubernetes</a></li>
+                <li class="third-level"><a href="#rancher">Rancher</a></li>
+                <li class="third-level"><a href="#terraform">Terraform</a></li>
+                <li class="third-level"><a href="#ansible">Ansible</a></li>
+            <li class="second-level"><a href="#tutorial-de-instalacao-e-configuracao-do-minikube-no-windows">Tutorial de Instalação e Configuração do Minikube no Windows</a></li>
+                
+                <li class="third-level"><a href="#passo-1-instalar-dependencias">Passo 1: Instalar Dependências</a></li>
+                <li class="third-level"><a href="#passo-2-instalar-o-minikube">Passo 2: Instalar o Minikube</a></li>
+                <li class="third-level"><a href="#passo-3-iniciar-o-minikube">Passo 3: Iniciar o Minikube</a></li>
+                <li class="third-level"><a href="#passo-4-instalar-o-kubectl">Passo 4: Instalar o Kubectl</a></li>
+                <li class="third-level"><a href="#passo-5-criar-aplicacao-flask">Passo 5: Criar Aplicação Flask</a></li>
+                <li class="third-level"><a href="#passo-6-criar-dockerfile">Passo 6: Criar Dockerfile</a></li>
+                <li class="third-level"><a href="#passo-7-construir-e-enviar-a-imagem-docker">Passo 7: Construir e Enviar a Imagem Docker</a></li>
+                <li class="third-level"><a href="#passo-8-criar-manifests-do-kubernetes">Passo 8: Criar Manifests do Kubernetes</a></li>
+                <li class="third-level"><a href="#passo-9-aplicar-manifests-do-kubernetes">Passo 9: Aplicar Manifests do Kubernetes</a></li>
+                <li class="third-level"><a href="#passo-10-verificar-os-pods-e-servico">Passo 10: Verificar os Pods e Serviço</a></li>
+                <li class="third-level"><a href="#passo-11-obter-url-de-acesso">Passo 11: Obter URL de Acesso</a></li>
+                <li class="third-level"><a href="#passo-12-ver-o-minikube-dashboard">Passo 12: Ver o Minikube Dashboard</a></li>
+            <li class="second-level"><a href="#como-se-tornar-um-excelente-sre">Como se Tornar um Excelente SRE</a></li>
+                
+                <li class="third-level"><a href="#introducao-ao-sre">Introdução ao SRE</a></li>
+                <li class="third-level"><a href="#1-compreender-os-fundamentos">1. Compreender os Fundamentos</a></li>
+                <li class="third-level"><a href="#2-aprender-programacao-e-automacao">2. Aprender Programação e Automação</a></li>
+                <li class="third-level"><a href="#3-conhecer-ferramentas-de-monitoramento-e-logging">3. Conhecer Ferramentas de Monitoramento e Logging</a></li>
+                <li class="third-level"><a href="#4-dominar-cloud-e-conteineres">4. Dominar Cloud e Contêineres</a></li>
+                <li class="third-level"><a href="#5-praticar-resolucao-de-problemas-e-resiliencia">5. Praticar Resolução de Problemas e Resiliência</a></li>
+                <li class="third-level"><a href="#6-focar-na-cultura-e-comunicacao">6. Focar na Cultura e Comunicação</a></li>
+                <li class="third-level"><a href="#recursos-adicionais">Recursos Adicionais</a></li>
+                <li class="third-level"><a href="#conclusao">Conclusão</a></li>
+            <li class="second-level"><a href="#sua-opiniao-e-importante">Sua Opinião é Importante!</a></li>
+                
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="roadmap-das-aulas">Roadmap das Aulas<a class="headerlink" href="#roadmap-das-aulas" title="Permanent link">&para;</a></h1>
+<p>Confira o cronograma das aulas e os tópicos que serão abordados:</p>
+<p><img alt="Roadmap das Aulas" src="https://res.cloudinary.com/dyhjjms8y/image/upload/v1717115396/Captura_de_tela_2024-05-31_002953_evnk75.png" /></p>
+<h2 id="sre-voce-esta-fazendo-isso-errado">SRE: Você está fazendo isso errado!<a class="headerlink" href="#sre-voce-esta-fazendo-isso-errado" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Curso</th>
+<th>Semana</th>
+<th>Pontuação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://learn.microsoft.com/pt-br/training/modules/intro-to-site-reliability-engineering/4-key-principles-1-virtuous-cycles">Princípios e práticas fundamentais da SRE: ciclos virtuosos</a></td>
+<td>Semana 09</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://learn.microsoft.com/pt-br/training/modules/intro-to-site-reliability-engineering/5-key-principles-2-human-side-of-sre">Princípios e práticas fundamentais da SRE: O lado humano da SRE</a></td>
+<td>Semana 09</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://learn.microsoft.com/pt-br/training/modules/intro-to-site-reliability-engineering/6-getting-started">SRE na prática. Como as empresas tem usado essa disciplina na prática?</a></td>
+<td>Semana 09</td>
+<td>0</td>
+</tr>
+<tr>
+<td><a href="https://cloudcasters.io/pt-br/site-reliability-engineer-sre/">Site Reliability Engineer (SRE)</a></td>
+<td>Semana 09</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<h3 id="repositorio-github">Repositório GitHub<a class="headerlink" href="#repositorio-github" title="Permanent link">&para;</a></h3>
+<p><a href="https://github.com/render-examples/django">Repositório GitHub - Django com Render</a></p>
+<h2 id="vamos-ver-se-voces-estao-fazendo-autoestudos">Vamos ver se vocês estão fazendo Autoestudos!<a class="headerlink" href="#vamos-ver-se-voces-estao-fazendo-autoestudos" title="Permanent link">&para;</a></h2>
+<p>Prepare-se para o quiz!</p>
+<p><a href="https://kahoot.it/">Jogar Kahoot!</a></p>
+<h2 id="sre-site-reliability-engineering">SRE (Site Reliability Engineering)<a class="headerlink" href="#sre-site-reliability-engineering" title="Permanent link">&para;</a></h2>
+<p>Explorando a Engenharia de Confiabilidade de Sites</p>
+<h3 id="principais-conceitos">Principais Conceitos<a class="headerlink" href="#principais-conceitos" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Automatização:</strong> Eliminação de trabalho manual repetitivo para aumentar a eficiência e reduzir erros.</li>
+<li><strong>Monitoramento e Observabilidade:</strong> Coleta de dados e métricas para entender o comportamento do sistema e identificar problemas.</li>
+<li><strong>Gerenciamento de Incidentes:</strong> Processos para responder e resolver incidentes de forma rápida e eficaz.</li>
+<li><strong>Engenharia de Capacidade:</strong> Garantia de que o sistema tenha recursos suficientes para atender à demanda.</li>
+<li><strong>Gerenciamento de Mudanças:</strong> Implementação de mudanças de forma controlada para minimizar o risco de interrupções.</li>
+</ul>
+<h3 id="beneficios">Benefícios<a class="headerlink" href="#beneficios" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Maior confiabilidade e disponibilidade do sistema.</li>
+<li>Redução do tempo de inatividade e interrupções.</li>
+<li>Melhora da escalabilidade e desempenho do sistema.</li>
+<li>Maior eficiência operacional e redução de custos.</li>
+<li>Melhora da colaboração entre equipes de desenvolvimento e operações.</li>
+</ul>
+<h2 id="tecnologias-essenciais-para-sre">Tecnologias Essenciais para SRE<a class="headerlink" href="#tecnologias-essenciais-para-sre" title="Permanent link">&para;</a></h2>
+<p>Ferramentas que capacitam a Engenharia de Confiabilidade de Sites</p>
+<h3 id="kubernetes">Kubernetes<a class="headerlink" href="#kubernetes" title="Permanent link">&para;</a></h3>
+<p>Plataforma open source para automatizar a implantação, o dimensionamento e o gerenciamento de aplicativos em contêineres.</p>
+<p><a href="https://kubernetes.io/">Saiba mais</a></p>
+<h3 id="rancher">Rancher<a class="headerlink" href="#rancher" title="Permanent link">&para;</a></h3>
+<p>Plataforma completa de gerenciamento de Kubernetes que facilita a operação de clusters em qualquer lugar.</p>
+<p><a href="https://www.rancher.com/">Saiba mais</a></p>
+<h3 id="terraform">Terraform<a class="headerlink" href="#terraform" title="Permanent link">&para;</a></h3>
+<p>Ferramenta de código aberto para provisionar e gerenciar infraestrutura em nuvem de forma segura e eficiente.</p>
+<p><a href="https://www.terraform.io/">Saiba mais</a></p>
+<h3 id="ansible">Ansible<a class="headerlink" href="#ansible" title="Permanent link">&para;</a></h3>
+<p>Ferramenta de automação de TI que simplifica tarefas como provisionamento em nuvem, gerenciamento de configuração e implantação de aplicativos.</p>
+<p><a href="https://www.ansible.com/">Saiba mais</a></p>
+<h2 id="tutorial-de-instalacao-e-configuracao-do-minikube-no-windows">Tutorial de Instalação e Configuração do Minikube no Windows<a class="headerlink" href="#tutorial-de-instalacao-e-configuracao-do-minikube-no-windows" title="Permanent link">&para;</a></h2>
+<h3 id="passo-1-instalar-dependencias">Passo 1: Instalar Dependências<a class="headerlink" href="#passo-1-instalar-dependencias" title="Permanent link">&para;</a></h3>
+<p>Primeiro, instale o Docker para Windows. Baixe e instale o Docker Desktop no site oficial:</p>
+<p><a href="https://www.docker.com/products/docker-desktop">Baixar Docker Desktop</a></p>
+<p>Após a instalação, inicie o Docker Desktop e certifique-se de que está rodando.</p>
+<h3 id="passo-2-instalar-o-minikube">Passo 2: Instalar o Minikube<a class="headerlink" href="#passo-2-instalar-o-minikube" title="Permanent link">&para;</a></h3>
+<p>Baixe e instale o Minikube:</p>
+<div class="codehilite"><pre><span></span><code><span class="nb">Invoke-WebRequest</span> <span class="n">-Uri</span> <span class="s2">&quot;https://storage.googleapis.com/minikube/releases/latest/minikube-installer.exe&quot;</span> <span class="n">-OutFile</span> <span class="s2">&quot;minikube-installer.exe&quot;</span>
+<span class="nb">Start-Process</span> <span class="n">-FilePath</span> <span class="s2">&quot;.\minikube-installer.exe&quot;</span> <span class="n">-Wait</span>
+</code></pre></div>
+
+<h3 id="passo-3-iniciar-o-minikube">Passo 3: Iniciar o Minikube<a class="headerlink" href="#passo-3-iniciar-o-minikube" title="Permanent link">&para;</a></h3>
+<p>Inicie o Minikube:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">minikube</span> <span class="nb">start </span><span class="p">-</span><span class="n">-driver</span><span class="p">=</span><span class="n">docker</span>
+</code></pre></div>
+
+<h3 id="passo-4-instalar-o-kubectl">Passo 4: Instalar o Kubectl<a class="headerlink" href="#passo-4-instalar-o-kubectl" title="Permanent link">&para;</a></h3>
+<p>Baixe e instale o Kubectl:</p>
+<div class="codehilite"><pre><span></span><code><span class="nb">Invoke-WebRequest</span> <span class="n">-Uri</span> <span class="s2">&quot;https://dl.k8s.io/release/v1.23.0/bin/windows/amd64/kubectl.exe&quot;</span> <span class="n">-OutFile</span> <span class="s2">&quot;kubectl.exe&quot;</span>
+<span class="nv">$env:Path</span> <span class="p">+=</span> <span class="s2">&quot;;$pwd&quot;</span>
+<span class="n">kubectl</span> <span class="n">version</span> <span class="p">-</span><span class="n">-client</span>
+</code></pre></div>
+
+<h3 id="passo-5-criar-aplicacao-flask">Passo 5: Criar Aplicação Flask<a class="headerlink" href="#passo-5-criar-aplicacao-flask" title="Permanent link">&para;</a></h3>
+<p>Crie uma aplicação Flask simples. Crie um diretório para o projeto e um arquivo <code>app.py</code>:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">mkdir</span> <span class="n">flask-app</span>
+<span class="nb">cd </span><span class="n">flask-app</span>
+<span class="nb">New-Item</span> <span class="n">-Path</span> <span class="p">.</span> <span class="n">-Name</span> <span class="s2">&quot;app.py&quot;</span> <span class="n">-ItemType</span> <span class="s2">&quot;file&quot;</span>
+</code></pre></div>
+
+<p>Adicione o seguinte conteúdo ao <code>app.py</code>:</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span>
+
+<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">hello</span><span class="p">():</span>
+    <span class="k">return</span> <span class="s2">&quot;Hello, World!&quot;</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s1">&#39;0.0.0.0&#39;</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">5000</span><span class="p">)</span>
+</code></pre></div>
+
+<p>Crie um arquivo <code>requirements.txt</code>:</p>
+<div class="codehilite"><pre><span></span><code><span class="nb">New-Item</span> <span class="n">-Path</span> <span class="p">.</span> <span class="n">-Name</span> <span class="s2">&quot;requirements.txt&quot;</span> <span class="n">-ItemType</span> <span class="s2">&quot;file&quot;</span>
+</code></pre></div>
+
+<p>Adicione o seguinte conteúdo:</p>
+<div class="codehilite"><pre><span></span><code>Flask==2.1.1
+</code></pre></div>
+
+<h3 id="passo-6-criar-dockerfile">Passo 6: Criar Dockerfile<a class="headerlink" href="#passo-6-criar-dockerfile" title="Permanent link">&para;</a></h3>
+<p>Crie um arquivo <code>Dockerfile</code> com o seguinte conteúdo:</p>
+<div class="codehilite"><pre><span></span><code><span class="nb">New-Item</span> <span class="n">-Path</span> <span class="p">.</span> <span class="n">-Name</span> <span class="s2">&quot;Dockerfile&quot;</span> <span class="n">-ItemType</span> <span class="s2">&quot;file&quot;</span>
+<span class="nb">Set-Content</span> <span class="n">-Path</span> <span class="s2">&quot;Dockerfile&quot;</span> <span class="n">-Value</span> <span class="sh">@&quot;</span>
+<span class="sh">FROM python:3.9-slim</span>
+
+<span class="sh">WORKDIR /app</span>
+
+<span class="sh">COPY requirements.txt requirements.txt</span>
+<span class="sh">RUN pip install -r requirements.txt</span>
+
+<span class="sh">COPY . .</span>
+
+<span class="sh">CMD [&quot;python&quot;, &quot;app.py&quot;]</span>
+<span class="sh">&quot;@</span>
+</code></pre></div>
+
+<h3 id="passo-7-construir-e-enviar-a-imagem-docker">Passo 7: Construir e Enviar a Imagem Docker<a class="headerlink" href="#passo-7-construir-e-enviar-a-imagem-docker" title="Permanent link">&para;</a></h3>
+<p>Construa a imagem Docker:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">minikube</span> <span class="n">-p</span> <span class="n">minikube</span> <span class="n">docker-env</span> <span class="p">|</span> <span class="nb">Invoke-Expression</span>
+<span class="n">docker</span> <span class="n">build</span> <span class="n">-t</span> <span class="n">flask-app</span><span class="p">:</span><span class="n">latest</span> <span class="p">.</span>
+</code></pre></div>
+
+<h3 id="passo-8-criar-manifests-do-kubernetes">Passo 8: Criar Manifests do Kubernetes<a class="headerlink" href="#passo-8-criar-manifests-do-kubernetes" title="Permanent link">&para;</a></h3>
+<p>Crie um arquivo <code>deployment.yaml</code>:</p>
+<div class="codehilite"><pre><span></span><code><span class="nb">New-Item</span> <span class="n">-Path</span> <span class="p">.</span> <span class="n">-Name</span> <span class="s2">&quot;deployment.yaml&quot;</span> <span class="n">-ItemType</span> <span class="s2">&quot;file&quot;</span>
+</code></pre></div>
+
+<p>Adicione o seguinte conteúdo:</p>
+<div class="codehilite"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">apps/v1</span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Deployment</span>
+<span class="nt">metadata</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">flask-app</span>
+<span class="nt">spec</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">replicas</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3</span>
+<span class="w">  </span><span class="nt">selector</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">matchLabels</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">flask-app</span>
+<span class="w">  </span><span class="nt">template</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">metadata</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">labels</span><span class="p">:</span>
+<span class="w">        </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">flask-app</span>
+<span class="w">    </span><span class="nt">spec</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">containers</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">flask-app</span>
+<span class="w">        </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">flask-app:latest</span>
+<span class="w">        </span><span class="nt">imagePullPolicy</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Never</span>
+<span class="w">        </span><span class="nt">ports</span><span class="p">:</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">containerPort</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5000</span>
+</code></pre></div>
+
+<p>Crie um arquivo <code>service.yaml</code>:</p>
+<div class="codehilite"><pre><span></span><code><span class="nb">New-Item</span> <span class="n">-Path</span> <span class="p">.</span> <span class="n">-Name</span> <span class="s2">&quot;service.yaml&quot;</span> <span class="n">-ItemType</span> <span class="s2">&quot;file&quot;</span>
+</code></pre></div>
+
+<p>Adicione o seguinte conteúdo:</p>
+<div class="codehilite"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v1</span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Service</span>
+<span class="nt">metadata</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">flask-app</span>
+<span class="nt">spec</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">NodePort</span>
+<span class="w">  </span><span class="nt">selector</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">flask-app</span>
+<span class="w">  </span><span class="nt">ports</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">protocol</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">TCP</span>
+<span class="w">    </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5000</span>
+<span class="w">    </span><span class="nt">targetPort</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5000</span>
+<span class="w">    </span><span class="nt">nodePort</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">30007</span>
+</code></pre></div>
+
+<h3 id="passo-9-aplicar-manifests-do-kubernetes">Passo 9: Aplicar Manifests do Kubernetes<a class="headerlink" href="#passo-9-aplicar-manifests-do-kubernetes" title="Permanent link">&para;</a></h3>
+<p>Aplique os arquivos de configuração:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">kubectl</span> <span class="n">apply</span> <span class="o">-f</span> <span class="n">deployment</span><span class="p">.</span><span class="n">yaml</span>
+<span class="n">kubectl</span> <span class="n">apply</span> <span class="o">-f</span> <span class="n">service</span><span class="p">.</span><span class="n">yaml</span>
+</code></pre></div>
+
+<h3 id="passo-10-verificar-os-pods-e-servico">Passo 10: Verificar os Pods e Serviço<a class="headerlink" href="#passo-10-verificar-os-pods-e-servico" title="Permanent link">&para;</a></h3>
+<p>Verifique os pods:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">kubectl</span> <span class="n">get</span> <span class="n">pods</span>
+</code></pre></div>
+
+<p>Verifique o serviço:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">kubectl</span> <span class="n">get</span> <span class="n">svc</span>
+</code></pre></div>
+
+<h3 id="passo-11-obter-url-de-acesso">Passo 11: Obter URL de Acesso<a class="headerlink" href="#passo-11-obter-url-de-acesso" title="Permanent link">&para;</a></h3>
+<p>Obtenha a URL de acesso:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">minikube</span> <span class="n">service</span> <span class="n">flask-app</span> <span class="p">-</span><span class="n">-url</span>
+</code></pre></div>
+
+<p>Abra a URL no navegador para ver a aplicação Flask em execução.</p>
+<h3 id="passo-12-ver-o-minikube-dashboard">Passo 12: Ver o Minikube Dashboard<a class="headerlink" href="#passo-12-ver-o-minikube-dashboard" title="Permanent link">&para;</a></h3>
+<p>Inicie o Minikube dashboard:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">minikube</span> <span class="n">dashboard</span>
+</code></pre></div>
+
+<p>Acesse a URL fornecida para visualizar o dashboard.</p>
+<h2 id="como-se-tornar-um-excelente-sre">Como se Tornar um Excelente SRE<a class="headerlink" href="#como-se-tornar-um-excelente-sre" title="Permanent link">&para;</a></h2>
+<h3 id="introducao-ao-sre">Introdução ao SRE<a class="headerlink" href="#introducao-ao-sre" title="Permanent link">&para;</a></h3>
+<p>Um Site Reliability Engineer (SRE) é responsável por garantir a confiabilidade e disponibilidade dos sistemas em produção. Aqui estão os passos essenciais para se tornar um excelente SRE.</p>
+<h3 id="1-compreender-os-fundamentos">1. Compreender os Fundamentos<a class="headerlink" href="#1-compreender-os-fundamentos" title="Permanent link">&para;</a></h3>
+<p>É crucial ter uma forte compreensão dos fundamentos de computação e redes, incluindo sistemas operacionais, redes, protocolos de comunicação e arquitetura de sistemas distribuídos.</p>
+<ul>
+<li>Estude conceitos de sistemas operacionais como processos, threads, gerenciamento de memória e sistemas de arquivos.</li>
+<li>Aprenda sobre redes, incluindo TCP/IP, DNS, HTTP/HTTPS e firewalls.</li>
+</ul>
+<h3 id="2-aprender-programacao-e-automacao">2. Aprender Programação e Automação<a class="headerlink" href="#2-aprender-programacao-e-automacao" title="Permanent link">&para;</a></h3>
+<p>A automação é uma parte vital do SRE. Familiarize-se com linguagens de programação como Python, Go, ou Ruby, e ferramentas de automação como Ansible, Puppet, e Chef.</p>
+<ul>
+<li>Desenvolva scripts para automatizar tarefas repetitivas.</li>
+<li>Crie e gerencie pipelines de CI/CD.</li>
+</ul>
+<h3 id="3-conhecer-ferramentas-de-monitoramento-e-logging">3. Conhecer Ferramentas de Monitoramento e Logging<a class="headerlink" href="#3-conhecer-ferramentas-de-monitoramento-e-logging" title="Permanent link">&para;</a></h3>
+<p>Um SRE deve ser proficiente em monitoramento e logging para detectar e solucionar problemas rapidamente.</p>
+<ul>
+<li>Aprenda a usar ferramentas como Prometheus, Grafana, ELK Stack (Elasticsearch, Logstash, Kibana), e Splunk.</li>
+<li>Configure alertas para monitorar a saúde dos sistemas.</li>
+</ul>
+<h3 id="4-dominar-cloud-e-conteineres">4. Dominar Cloud e Contêineres<a class="headerlink" href="#4-dominar-cloud-e-conteineres" title="Permanent link">&para;</a></h3>
+<p>O conhecimento em tecnologias de cloud e contêineres é essencial.</p>
+<ul>
+<li>Estude serviços de cloud como AWS, Google Cloud, e Azure.</li>
+<li>Aprenda a usar contêineres com Docker e orquestração de contêineres com Kubernetes.</li>
+</ul>
+<h3 id="5-praticar-resolucao-de-problemas-e-resiliencia">5. Praticar Resolução de Problemas e Resiliência<a class="headerlink" href="#5-praticar-resolucao-de-problemas-e-resiliencia" title="Permanent link">&para;</a></h3>
+<p>Desenvolva habilidades de resolução de problemas e melhore a resiliência dos sistemas.</p>
+<ul>
+<li>Realize exercícios de Chaos Engineering para testar a resiliência dos sistemas.</li>
+<li>Participe de simulações de incidentes para praticar a resposta a incidentes.</li>
+</ul>
+<h3 id="6-focar-na-cultura-e-comunicacao">6. Focar na Cultura e Comunicação<a class="headerlink" href="#6-focar-na-cultura-e-comunicacao" title="Permanent link">&para;</a></h3>
+<p>Um excelente SRE deve promover uma cultura de colaboração e comunicação eficaz.</p>
+<ul>
+<li>Trabalhe em estreita colaboração com equipes de desenvolvimento e operações.</li>
+<li>Participe de revisões pós-incidente (Postmortems) para identificar áreas de melhoria.</li>
+</ul>
+<h3 id="recursos-adicionais">Recursos Adicionais<a class="headerlink" href="#recursos-adicionais" title="Permanent link">&para;</a></h3>
+<p>Para aprofundar seus conhecimentos em DevOps e Segurança da Informação, explore os seguintes recursos:</p>
+<p><a href="https://roadmap.sh/devops">Trilha de DevOps</a><br />
+<a href="https://www.freecodecamp.org/learn/information-security/">Trilha de Segurança da Informação</a></p>
+<h3 id="conclusao">Conclusão<a class="headerlink" href="#conclusao" title="Permanent link">&para;</a></h3>
+<p>Tornar-se um excelente SRE requer uma combinação de habilidades técnicas e soft skills. Continuar aprendendo e se adaptando às novas tecnologias e práticas é essencial para o sucesso nesta carreira.</p>
+<h2 id="sua-opiniao-e-importante">Sua Opinião é Importante!<a class="headerlink" href="#sua-opiniao-e-importante" title="Permanent link">&para;</a></h2>
+<p>Deixe seu feedback com estrelas e comentários e ajude-nos a melhorar o Inteli e o curso.</p></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = ".."</script>
+    
+    <script src="../js/base.js"></script>
+    <script src="../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>
